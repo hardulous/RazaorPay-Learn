@@ -89,3 +89,9 @@ export default App;
 // Here this Key_Id always put in env variable to protect it 
 
 // here in option object many properties like , Amount,Currency,Order id etc comes from backend 
+
+// Here there are 2 way to validate payment one is using information present inside handler method of object options passed to new RazorPay() constructor and other is let razorpay to tell you that payment has been made which is best.
+
+// a web-hook is a callback created inside razorpay system so whenever a payment is made to us then razaorpay is responsible for calling a certain api to our server 
+
+// so in create webhook we are listening to event called payment.captured which is a event which get triggered when amount actually deducted from user bank account 
